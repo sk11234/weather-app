@@ -43,7 +43,6 @@ let weather = {
                     weather.displayWeather(data);
                 })
         }
-        //lastCity = city
     },
     displayWeather: function(data) {
         const {name} = data;
