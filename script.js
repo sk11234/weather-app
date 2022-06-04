@@ -65,7 +65,7 @@ let weather = {
             document.querySelector(".wind").innerText = "Wind Speed: " + speed + " m/s";
         }
         document.querySelector(".weather").classList.remove("loading")
-        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + ",building,nature')"
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "-nature')"
     },
     search: function() {
         this.fetchWeather(document.querySelector(".search-bar").value);
