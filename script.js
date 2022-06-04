@@ -110,6 +110,3 @@ document.querySelector("#switchValue").addEventListener("click", function() {
 });
 
 weather.fetchWeather("Washington D.C.");
-
-//change images so it also gets
-//weather conditions
