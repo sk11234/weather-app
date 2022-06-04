@@ -18,6 +18,7 @@ let weather = {
                         alert("Sorry, that location could not be found.");
                     }
                     else {
+                        lastCity = city
                         return response.json()
                     }
                 })
@@ -34,6 +35,7 @@ let weather = {
                         alert("Sorry, that location could not be found.");
                     }
                     else {
+                        lastCity = city
                         return response.json()
                     }
                 })
@@ -41,7 +43,7 @@ let weather = {
                     weather.displayWeather(data);
                 })
         }
-        lastCity = city
+        //lastCity = city
     },
     displayWeather: function(data) {
         const {name} = data;
