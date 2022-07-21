@@ -6,12 +6,11 @@ function getUnit() {
 let lastCity = "Washington D.C."
 
 let weather = {
-    "apiKey": "b66ff9824239561c2a5cd92cf2ecfe38",
     fetchWeather: function(city) {
         getUnit();
         if (getUnit() === false) {
             fetch(
-                "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + this.apiKey
+                `/api?q=${city}&units=imperial`
             )
                 .then(function(response) {
                     if (!response.ok) {
@@ -28,7 +27,7 @@ let weather = {
         }
         else {
             fetch(
-                "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + this.apiKey
+                `/api?q=${city}&units=metric`
             )
                 .then(function(response) {
                     if (!response.ok) {
