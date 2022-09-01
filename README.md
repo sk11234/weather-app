@@ -1,3 +1,3 @@
 # weather-app
 
-Tracks severe weather around the globe by using NASA’s Earth Observatory Natural Event Tracker API
+Allows user to search for the weather in locations around the world
